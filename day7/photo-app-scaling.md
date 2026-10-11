@@ -66,7 +66,7 @@ Object storage is designed for large files, scales independently, is durable, an
 
 ## 4. Proposed architecture
 
-\`\`\`text
+```text
                          ┌─────────────────────┐
                          │ DNS: snapshare.com  │
                          └──────────┬──────────┘
@@ -124,7 +124,7 @@ Object storage is designed for large files, scales independently, is durable, an
                                     └───────┬────────┘
                                             │ creates thumbnail
                                             └──────> Object Storage
-\`\`\`
+```
 
 The app servers are stateless: persistent user data and photo files are not kept only in an individual server's memory or local disk. Every healthy app server can handle any API request.
 
